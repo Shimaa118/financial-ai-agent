@@ -22,5 +22,5 @@ user_query = st.text_input("Ask something about stocks or crypto:", "")
 
 if st.button("Get Answer"):
     if user_query:
-        response = agent.respond(user_query)
+        response= agent.run(user_query)
         st.markdown(response)
